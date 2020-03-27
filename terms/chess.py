@@ -20,3 +20,8 @@ def compare_cell(x1, y1, x2, y2):
 
 
 compare_cell(1, 4, 5, 8)
+
+x1 = int(input(x1))
+y1 = int(imput(y1))
+x2 = int(imput(x2))
+y2 = int(imput(y2))
