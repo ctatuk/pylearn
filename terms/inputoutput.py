@@ -30,11 +30,25 @@ s = 1/2 * a * b
 print(s)'''
 
 
-print('n - число школьников')
+'''print('n - число школьников')
 print('k - количество яблок')
 print('Введите n и k')
 n = int(input())
 k = int(input())
 print('apples must be eat = ' + str(k//n))
-print('apples stay in basket = ' + str(k%n))
+print('apples stay in basket = ' + str(k%n))'''
+
+
+'''print('n - minutes')
+print("m - hours")
+n = int(input())
+m = int(input())
+print(str(n//60) + ':' + (n%60))'''
+
+print('ВВедите количество минут, прошедших с начала суток')
+n = int(input())
+number_of_hours = (n // 60) % 24
+number_of_minutes = n % 60
+print('Часы показывают: ' + str(number_of_hours) + ':' + str(number_of_minutes))
+print('Часы показывают: %s:%s' % (number_of_hours, number_of_minutes))
 
