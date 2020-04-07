@@ -1,14 +1,12 @@
-#Chess task
+#chess.py
 Source https://pythontutor.ru/lessons/ifelse/problems/chess_board/
-
-#chess.py Задача «Шахматная доска» 
-Условие
-Заданы две клетки шахматной доски. Если они покрашены в один цвет, 
-то выведите слово YES, а если в разные цвета — то NO. 
-Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и
- номер строки сначала для первой клетки, потом для второй клетки.
+Condition
+Two checkerboard squares are set. If they are painted the same color,
+print the word YES, and if in different colors - then NO.
+The program receives four numbers from 1 to 8 each, specifying the column number and
+  line number first for the first cell, then for the second cell.
  
-#compare.py Задача «Минимум из трех чисел» 
-Условие
-Даны три целых числа. Выведите значение наименьшего из них.
+#compare.py
+Condition
+Three integers are given. Print the value of the smallest of them.
 
