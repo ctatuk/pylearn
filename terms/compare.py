@@ -1,3 +1,8 @@
+'''
+Source https://pythontutor.ru/lessons/ifelse/problems/minimum3/
+Condition
+Three integers are given. Print the value of the smallest of them.
+'''
 def compare_digits(a, b, c):
     if a <= b and a <= c:
         print(a)
