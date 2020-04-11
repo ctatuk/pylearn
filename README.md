@@ -6,6 +6,6 @@ Sources list:
   https://pythontutor.ru/lessons/inout_and_arithmetic_operations/
   
   Decorators: 
-    https://nuancesprog.ru/p/1284/ Part1 \n
+    https://nuancesprog.ru/p/1284/ Part1 
     https://nuancesprog.ru/p/1287/ Part2
 
