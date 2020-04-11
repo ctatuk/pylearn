@@ -72,8 +72,43 @@ x = int(input())
 m = x+1
 y = x-1
 print('The next number for the number ' + str(x) + ' is ' + str(m))
-print('The previous number for the number ' + str(x) + ' is ' + str(y))'''
+print('The previous number for the number ' + str(x) + ' is ' + str(y))
 
+print('Введите число учеников в трёх классах для расчёта количества парт')
+n = int(input())
+m = int(input())
+g = int(input())
+x = n//2
+y = m//2
+z = g//2
+if n%2>0:
+    x = x+1
+if m%2>0:
+    y = y+1
+if g%2>0:
+    z = z+1
+print('desks in class one ' + str(x))
+print('desks in class two ' + str(y))
+print('desks in class three ' + str(z))
+print(x+y+z)
 
+from math import ceil
+print('Введите число учеников в трёх классах для расчёта количества парт')
+n = float(input())
+m = float(input())
+g = float(input())
+x = ceil(n/2)
+y = ceil(m/2)
+z = ceil(g/2)
+print('desks in class one ' + str(x))
+print('desks in class two ' + str(y))
+print('desks in class three ' + str(z))
+print(x+y+z)'''
+
+import math
+x=2.75
+y=2.011
+print(math.ceil(x))
+print(math.ceil(y))
 
 
