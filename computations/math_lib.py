@@ -24,7 +24,6 @@ def pole_snail(pole_height, up_speed, down_speed):
     adjusted_speed = up_speed - down_speed
     count_days = pole_height / adjusted_speed
     print('The journey lasted looong {} days'.format(ceil(count_days)))
-    return
 
 
 pole_snail(740, 3, 2.5)
