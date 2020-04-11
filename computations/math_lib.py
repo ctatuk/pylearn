@@ -12,6 +12,9 @@ from math import ceil
 def pole_snail(pole_height, up_speed, down_speed):
     if pole_height < 0 or up_speed < 0 or down_speed < 0:
         raise Exception('Invalid arguments, all arguments should be >= 0')
+    if down_speed > up_speed:
+        raise Exception('Snail is too slow to raise above {}m'.format(up_speed))
+
     if pole_height == 0:
         print('Pole is not long enough')
         return 0
