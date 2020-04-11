@@ -7,5 +7,6 @@ Sources list:
   
   Decorators: 
     https://nuancesprog.ru/p/1284/ Part1
+    
     https://nuancesprog.ru/p/1287/ Part2
 
