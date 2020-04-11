@@ -1,5 +1,6 @@
 # pylearn
 This project was created to teach me and my friends Python programming
+
 Sources list:
 
   https://pythontutor.ru/lessons/inout_and_arithmetic_operations/
