@@ -91,6 +91,26 @@ def where_should_i_swim_v4(M, N, x, y):
     return min(x, y, M - x, N - y)
 
 
-distance = where_should_i_swim_v1(10, 86, 3, 43)
+def where_should_i_swim_v5(n, m, x, y):
+    # s - минимальное расстояние до бортика
+    if x < 0.5 * n:
+        s = x
+        return s
+    if y < 0.5 * m:
+        s = y
+        return s
+    if x > 0.5 * n:
+        s = n - x
+        return s
+    if y > 0.5 * m:
+        s = m - y
+        return s
+
+
+'''distance = where_should_i_swim_v5(10, 86, 3, 43)
 print(distance)
 assert distance == 3
+'''
+
+distance = where_should_i_swim_v5(49, 53, 17, 21)
+print(distance)
