@@ -61,3 +61,22 @@ def chess(x1, y1, x2, y2):
 
 
 chess(1, 1, 2, 6)
+
+
+def cell(x, y):
+    if (x + y) % 2 == 0:
+        return True
+    else:
+        return False
+
+
+def chess2(x1, y1, x2, y2):
+    cell1 = cell(x1, y1)
+    cell2 = cell(x2, y2)
+    if cell1 == cell2:
+        print('Клетки одного цвета')
+    else:
+        print('Клетки разного цвета')
+
+
+chess2(1, 1, 2, 6)
