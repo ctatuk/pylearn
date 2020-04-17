@@ -19,4 +19,4 @@ def compare_cell(x1, y1, x2, y2):
         print('The cells color is different')
 
 
-compare_cell(1, 4, 5, 8)
+compare_cell(1, 4, 5, 7)

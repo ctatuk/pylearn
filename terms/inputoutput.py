@@ -103,12 +103,12 @@ z = ceil(g/2)
 print('desks in class one ' + str(x))
 print('desks in class two ' + str(y))
 print('desks in class three ' + str(z))
-print(x+y+z)'''
+print(x+y+z)
 
 import math
 x=2.75
 y=2.011
 print(math.ceil(x))
-print(math.ceil(y))
+print(math.ceil(y))'''
 
 
