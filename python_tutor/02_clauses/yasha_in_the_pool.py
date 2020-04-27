@@ -1,9 +1,14 @@
-# Yasha is in the pool
-# Pool size is M x N
-# x will be distance from left side of the pool
-# y will be distance rom the top side of the pool
-
 def where_should_i_swim_v1(M, N, x, y):
+    """
+    Source https://pythontutor.ru/lessons/ifelse/problems/jacob_the_swimmer/
+    Condition
+    Yasha swam in a N × M meter pool and was tired.
+    At that moment, he discovered that he was at a distance of x meters
+    from one of the long sides (not necessarily from the nearest) and y meters from one of the short sides.
+    What is the minimum distance Yasha must swim to get out of the pool to the side?
+    The program receives the input numbers N, M, x, y.
+    The program should print the number of meters that you need to swim Yasha to the side.
+    """
     if M < 0 or N < 0:
         print("Looks like this is not a pool. Puzzling...")
         return
@@ -27,6 +32,16 @@ def where_should_i_swim_v1(M, N, x, y):
 
 
 def where_should_i_swim_v2(M, N, x, y):
+    """
+    Source https://pythontutor.ru/lessons/ifelse/problems/jacob_the_swimmer/
+    Condition
+    Yasha swam in a N × M meter pool and was tired.
+    At that moment, he discovered that he was at a distance of x meters
+    from one of the long sides (not necessarily from the nearest) and y meters from one of the short sides.
+    What is the minimum distance Yasha must swim to get out of the pool to the side?
+    The program receives the input numbers N, M, x, y.
+    The program should print the number of meters that you need to swim Yasha to the side.
+    """
     if M < 0 or N < 0:
         print("Looks like this is not a pool. Puzzling...")
         return
@@ -52,6 +67,16 @@ def where_should_i_swim_v2(M, N, x, y):
 
 
 def where_should_i_swim_v3(M, N, x, y):
+    """
+    Source https://pythontutor.ru/lessons/ifelse/problems/jacob_the_swimmer/
+    Condition
+    Yasha swam in a N × M meter pool and was tired.
+    At that moment, he discovered that he was at a distance of x meters
+    from one of the long sides (not necessarily from the nearest) and y meters from one of the short sides.
+    What is the minimum distance Yasha must swim to get out of the pool to the side?
+    The program receives the input numbers N, M, x, y.
+    The program should print the number of meters that you need to swim Yasha to the side.
+    """
     if M < 0 or N < 0:
         print("Looks like this is not a pool. Puzzling...")
         return
@@ -81,6 +106,16 @@ def where_should_i_swim_v3(M, N, x, y):
 
 
 def where_should_i_swim_v4(M, N, x, y):
+    """
+    Source https://pythontutor.ru/lessons/ifelse/problems/jacob_the_swimmer/
+    Condition
+    Yasha swam in a N × M meter pool and was tired.
+    At that moment, he discovered that he was at a distance of x meters
+    from one of the long sides (not necessarily from the nearest) and y meters from one of the short sides.
+    What is the minimum distance Yasha must swim to get out of the pool to the side?
+    The program receives the input numbers N, M, x, y.
+    The program should print the number of meters that you need to swim Yasha to the side.
+    """
     if M < 0 or N < 0:
         print("Looks like this is not a pool. Puzzling...")
         return
@@ -92,7 +127,16 @@ def where_should_i_swim_v4(M, N, x, y):
 
 
 def where_should_i_swim_v5(n, m, x, y):
-    # s - минимальное расстояние до бортика
+    """
+    Source https://pythontutor.ru/lessons/ifelse/problems/jacob_the_swimmer/
+    Condition
+    Yasha swam in a N × M meter pool and was tired.
+    At that moment, he discovered that he was at a distance of x meters
+    from one of the long sides (not necessarily from the nearest) and y meters from one of the short sides.
+    What is the minimum distance Yasha must swim to get out of the pool to the side?
+    The program receives the input numbers N, M, x, y.
+    The program should print the number of meters that you need to swim Yasha to the side.
+    """
     if x < 0.5 * n:
         s = x
         return s
@@ -107,10 +151,17 @@ def where_should_i_swim_v5(n, m, x, y):
         return s
 
 
-'''distance = where_should_i_swim_v5(10, 86, 3, 43)
+distance = where_should_i_swim_v1(49, 53, 17, 21)
 print(distance)
-assert distance == 3
-'''
+
+distance = where_should_i_swim_v2(49, 53, 17, 21)
+print(distance)
+
+distance = where_should_i_swim_v3(49, 53, 17, 21)
+print(distance)
+
+distance = where_should_i_swim_v4(49, 53, 17, 21)
+print(distance)
 
 distance = where_should_i_swim_v5(49, 53, 17, 21)
 print(distance)
