@@ -102,14 +102,38 @@ def what_year(x):
 Условие
 Даны три целых числа. Выведите значение наименьшего из них.'''
 
+
 def min_three(a, b, c):
-    if a<b and a<c:
+    if a < b and a < c:
         print('a')
-    elif b<c:
+    elif b < c:
         print('b')
     else:
         print('c')
 
-min_three(1, 2, 3)
-min_three(2, 1, 3)
-min_three(3, 2, 1)
+
+# min_three(1, 2, 3)
+# min_three(2, 1, 3)
+# min_three(3, 2, 1)
+
+
+'''Задача «Сколько совпадает чисел»
+Условие
+Даны три целых числа. Определите, сколько среди них совпадающих. Программа должна вывести одно из чисел: 3 (если все
+совпадают), 2 (если два совпадает) или 0 (если все числа различны). '''
+
+
+def equality(a, b, c):
+    if a==b and b==c and a==c:
+        print('3')
+    elif a==b or b==c or a==c:
+        print('2')
+    else:
+        print('0')
+
+
+#equality(3, 3, 3)
+#equality(1, 2, 3)
+#equality(2, 3, 2)
+
+
