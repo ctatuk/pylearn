@@ -165,14 +165,14 @@ def rook(x1, y1, x2, y2):
 
 
 def king(x1, y1, x2, y2):
-    if x2==x1+1 or x2==x1-1 or y2==y1+1 or y2==y1-1:
+    if x2 == x1 + 1 or x2 == x1 - 1 or y2 == y1 + 1 or y2 == y1 - 1:
         print('yes')
     else:
         print('no')
 
 
-#king(3, 3, 4, 4)
-#king(1, 1, 1, 3)
+# king(3, 3, 4, 4)
+# king(1, 1, 1, 3)
 
 
 '''Задача «Ход слона»
@@ -182,4 +182,14 @@ def king(x1, y1, x2, y2):
 
 
 def elephant(x1, y1, x2, y2):
-    
+    if abs(x1-x2) == abs(y1-y2):
+        print('yes')
+    else:
+        print('no')
+
+#elephant(3, 3, 4, 5)
+#elephant(3, 4, 2, 4)
+#elephant(6, 6, 7, 5)
+
+'''a,c,b,d = (int(input()) for _ in range(4))
+print('YES' if abs(a - b) == abs(c - d) else 'NO')'''
