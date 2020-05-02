@@ -146,6 +146,11 @@ def equality(a, b, c):
 
 
 def rook(x1, y1, x2, y2):
+    for elem in x1, y1, x2, y2:
+        print(elem)
+        if elem not in range(1, 9):
+            print('use numbers from 1 to 8')
+            break
     if x1 == x2 or y1 == y2:
         print('yes')
     else:
@@ -154,7 +159,7 @@ def rook(x1, y1, x2, y2):
 
 # rook(4, 4, 4, 8)
 # rook(5, 1, 4, 6)
-
+# rook(0, 1, 8, 3)
 
 '''Условие
 Задача «Ход короля»
@@ -165,6 +170,11 @@ def rook(x1, y1, x2, y2):
 
 
 def king(x1, y1, x2, y2):
+    for elem in x1, y1, x2, y2:
+        print(elem)
+        if elem not in range(1, 9):
+            print('use numbers from 1 to 8')
+            break
     if x2 == x1 + 1 or x2 == x1 - 1 or y2 == y1 + 1 or y2 == y1 - 1:
         print('yes')
     else:
@@ -182,6 +192,11 @@ def king(x1, y1, x2, y2):
 
 
 def elephant(x1, y1, x2, y2):
+    for elem in x1, y1, x2, y2:
+        print(elem)
+        if elem not in range(1, 9):
+            print('use numbers from 1 to 8')
+            break
     if abs(x1-x2) == abs(y1-y2):
         print('yes')
     else:
@@ -193,3 +208,39 @@ def elephant(x1, y1, x2, y2):
 
 '''a,c,b,d = (int(input()) for _ in range(4))
 print('YES' if abs(a - b) == abs(c - d) else 'NO')'''
+
+
+'''Задача «Ход ферзя»
+Условие
+
+Шахматный ферзь ходит по диагонали, горизонтали или вертикали. Даны две различные клетки шахматной доски, определите,
+может ли ферзь попасть с первой клетки на вторую одним ходом. '''
+
+def queen(x1, y1, x2, y2):
+    for elem in x1, y1, x2, y2:
+        print(elem)
+        if elem not in range(1, 9):
+            print('use numbers from 1 to 8')
+            break
+    if abs(x1-x2) == abs(y1-y2):
+        print('yes')
+    elif x1 == x2 or y1 == y2:
+        print('yes')
+    else:
+        print('no')
+
+#queen(1, 1, 2, 2)
+#queen(1, 1, 2, 3)
+#queen(6, 5, 2, 5)
+
+'''
+Задача «Ход коня»
+Условие
+
+Шахматный конь ходит буквой “Г” — на две клетки по вертикали в любом направлении и на одну клетку по горизонтали, или
+наоборот. Даны две различные клетки шахматной доски, определите, может ли конь попасть с первой клетки на вторую одним
+ходом.
+'''
+
+
+def horse(x1, y1, x2, y2)
