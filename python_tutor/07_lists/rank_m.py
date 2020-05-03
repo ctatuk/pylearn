@@ -10,8 +10,6 @@ def swap_minmax(unique_list):
 
 
 swap_minmax([1, 3, 5, 6, 2, 0])
-
-
 def swap_minmax2(unique_list):
     min_elem = unique_list[0]
     max_elem = unique_list[0]
