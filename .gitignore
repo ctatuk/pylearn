@@ -37,6 +37,7 @@ MANIFEST
 .idea*
 *.xml
 .idea/*
+.idea/.gitignore
 
 # Installer logs
 pip-log.txt
