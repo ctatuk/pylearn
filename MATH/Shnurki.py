@@ -243,4 +243,5 @@ def queen(x1, y1, x2, y2):
 '''
 
 
-def horse(x1, y1, x2, y2)
+def horse(x1, y1, x2, y2):
+    
