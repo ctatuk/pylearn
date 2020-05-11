@@ -2,12 +2,14 @@ import sys
 import psycopg2
 import base64
 
+
 def main(auth):
     user, pwd = base64.b64decode(auth).decode('ascii').split(':')
     conn = None
     try:
         conn = psycopg2.connect(
-            "dbname='sample' user='%s' host='sql-test-postgres.cfdqnys76xyr.us-east-1.rds.amazonaws.com' password='%s'" % (user, pwd))
+            "dbname='sample' user='%s' host='sql-test-postgres.cfdqnys76xyr.us-east-1.rds.amazonaws.com' password='%s'" % (
+            user, pwd))
     except:
         print("I am unable to connect to the database")
     if conn:
@@ -24,6 +26,7 @@ def main(auth):
         cur.close()
         conn.commit()
         conn.close()
+
 
 def insert_books(cur):
     book_list = """War and Peace, Tolstoy, 2018, 1472
@@ -43,6 +46,7 @@ def insert_books(cur):
             num + 2, attrs[0].replace("'", ""), attrs[1], attrs[2], attrs[3])
         cur.execute(sql)
 
+
 def insert_visitors(cur):
     visitor_list = """Vasin Eugene, Shariokvaya 13, 1965, evasin@mail.ru
     Shavygina Svetlana, Kirovskaya 21, 1978, sshavygina@mail.ru
@@ -54,6 +58,7 @@ def insert_visitors(cur):
             num + 1, attrs[0], attrs[1], attrs[2], attrs[3])
         cur.execute(sql)
 
+
 def insert_loans(cur):
     loan_list = """1, 3, september 5th 2020, september 29th 2020
     3, 1, june 10th 2020, june 16th 2020"""
@@ -64,6 +69,7 @@ def insert_loans(cur):
             attrs[0], attrs[1], attrs[2], attrs[3])
         cur.execute(sql)
 
+
 def create_loan_books(cur):
     cur.execute("""create table loan_books (
             visitor_id int,
@@ -72,6 +78,7 @@ def create_loan_books(cur):
             loan_end varchar(20)
             )
             """)
+
 
 if __name__ == '__main__':
     main(str(sys.argv[1]))
