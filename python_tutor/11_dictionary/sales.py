@@ -25,3 +25,7 @@ def sales2(list):
 
 sales2([('Ivanov', 'paper', 10), ('Petrov', 'pens', 5), ('Ivanov', 'marker', 3),
        ('Ivanov', 'paper', 7), ('Petrov', 'envelope', 20), ('Ivanov', 'envelope', 5)])
+
+
+sales2([('Alex', 'paper', 10), ('Petrov', 'pens', 5), ('Alex', 'marker', 3),
+       ('Alex', 'paper', 7), ('Petrov', 'envelope', 20), ('Alex', 'envelope', 5)])
